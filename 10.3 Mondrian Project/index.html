@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
     Write your CSS here 
     Gap Colour: #000
     White: #F0F1EC
@@ -19,11 +18,92 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
-  </style>
-</head>
 
-<body>
-  <!-- Write your HTML here -->
-</body>
+      .body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
 
+      .container {
+        display: grid;
+        grid-template-columns: repeat(748, 1px);
+        grid-template-rows: repeat(748, 1px);
+        gap: 0px;
+        height: 748px;
+        width: 748px;
+        background-color: #f0f1ec;
+      }
+
+      .red {
+        background-color: #e72f24;
+        grid-area: 1 / 1 / 415 / 319;
+      }
+
+      .blackdiv1 {
+        background-color: #000;
+        grid-area: 1 / 319 / -1 / 328;
+      }
+
+      .blackdiv2 {
+        background-color: #000;
+        grid-area: 415 / 1 / 424 / -1;
+      }
+
+      .blue {
+        background-color: #004592;
+        grid-area: 424 / -50 / 553 / -1;
+      }
+
+      .blackdiv3 {
+        background-color: #000;
+        grid-area: 424 / -59 / -1 / -50;
+      }
+
+      .blackdiv4 {
+        background-color: #000;
+        grid-area: 553 / -50 / 573 / -1;
+      }
+
+      .blackdiv5 {
+        background-color: #000;
+        grid-area: -31 / 1 / -21 / -50;
+      }
+
+      .blackdiv6 {
+        background-color: #000;
+        grid-area: -21 / 527 / -1 / 537;
+      }
+
+      .yellow {
+        background-color: #f9d01e;
+        grid-area: -21 / 328 / -1 / 527;
+      }
+
+      .black {
+        background-color: #232629;
+        grid-area: -21 / 537 / -1 / -59;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+
+    <div class="container">
+      <div class="item red"></div>
+      <div class="item blackdiv1"></div>
+      <div class="item blackdiv2"></div>
+      <div class="item blue"></div>
+      <div class="item blackdiv3"></div>
+      <div class="item blackdiv4"></div>
+      <div class="item blackdiv5"></div>
+      <div class="item yellow"></div>
+      <div class="item black"></div>
+      <div class="item blackdiv6"></div>
+    </div>
+  </body>
 </html>
